@@ -1,5 +1,5 @@
 #ASCII to binary
-chara=input()
+chara=str(input())
 bina=""
 for c in chara:
     ascival=ord(c)
@@ -28,7 +28,7 @@ line = bina
 lis=[line[i:i+4] for i in range(0, len(line), 4)]
 
 
-hexal="ABCDEF"
+hexal="abcdef"
 res=""
 
 for li in lis:
