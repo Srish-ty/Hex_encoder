@@ -43,9 +43,3 @@ for li in lis:
 
     
 print(res)   
-<<<<<<< HEAD:hex_encoder.py
-           
-        
-=======
-        
->>>>>>> db6eac66ef9f963be7af870560fd64c9fb88b547:Hex_encoder.py
