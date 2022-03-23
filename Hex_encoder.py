@@ -28,7 +28,7 @@ line = bina
 lis=[line[i:i+4] for i in range(0, len(line), 4)]
 
 
-hexal="abcdef"
+hexal="ABCDEF"
 res=""
 
 for li in lis:
