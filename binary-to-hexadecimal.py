@@ -2,9 +2,8 @@
 #this will convert it to hexadecimal
 
 
-line = str(input)
+line = str(input())
 lis=[line[i:i+4] for i in range(0, len(line), 4)]
-
 
 hexal="ABCDEF"
 res=""
