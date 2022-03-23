@@ -1,4 +1,4 @@
-#ascii to binary
+#ASCII to binary
 chara=input()
 bina=""
 for c in chara:
@@ -18,17 +18,30 @@ for c in chara:
     else:
         bina+=str(bin)
     
+#prints binary code    
 #print(bina)
+
+#let's convert that binary into hexadecimal
+
+
 line = bina
 lis=[line[i:i+4] for i in range(0, len(line), 4)]
-#print(lis)
 
-res=0
+
+hexal="ABCDEF"
+res=""
+
 for li in lis:
-    res*=10
+    j=0
     for i in range(4):
-        res+=int(li[i])*(2**(3-i))
-    
+        j+=int(li[i])*(2**(3-i))
+    #print(j)
+    if j<10:
+        res+=str(j)
+    else:
+        res+=hexal[j-10]
+
     
 print(res)   
+           
         
