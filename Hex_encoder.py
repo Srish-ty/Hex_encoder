@@ -4,19 +4,16 @@ bina=""
 for c in chara:
     ascival=ord(c)
     #print(ascival," ")
+    li=""
     bin=0
-    for i in range(9):
+    for i in range(8):
+        bin*=10
         bin+=ascival%2
-        bin/=10
         ascival=ascival//2
-    bin*=1000000000
-    bin+=0.001
-    bin=int(bin)
-    leng=len(str(bin))
-    if leng<8:
-        bina+=("0"*(8-leng)+str(bin))
-    else:
-        bina+=str(bin)
+    li+=str(bin)
+    
+    bit=li[::-1]
+    bina+=bit
     
 #prints binary code    
 #print(bina)
